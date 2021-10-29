@@ -1,0 +1,122 @@
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayishBlue: hsl(246, 25%, 77%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+.container,
+.wrapper {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  background-color: var(--red);
+}
+
+.text-container > *,
+.form-container > * {
+  line-height: 1.4em;
+}
+
+.form-container > p {
+  padding: 1em 2em;
+  border-radius: 5px;
+  background-color: var(--blue);
+}
+
+.form-container > p span {
+  font-weight: 700;
+}
+
+.form {
+  width: 100%;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.form > * {
+  padding: 1em;
+  margin-top: 1em;
+  width: 100%;
+  border-radius: 5px;
+  border: 0.1em solid var(--grayishBlue);
+}
+
+.form > p {
+  border: 0;
+  color: var(--grayishBlue);
+  font-size: 12px;
+}
+
+.form > p a {
+  text-decoration: none;
+  color: var(--red);
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+  color: #fff;
+  background-color: var(--green);
+  box-shadow: 1px 1px 5px var(--grayishBlue);
+}
+
+@media screen and (min-width: 375px) {
+  .wrapper {
+    width: 320px;
+    text-align: center;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .text-container {
+    width: 50%;
+    text-align: left;
+  }
+
+  .text-container > h2 {
+    font-size: 3em;
+  }
+
+  .text-container > p {
+    font-size: 1.2em;
+  }
+
+  .form-container {
+    width: 40%;
+  }
+}
