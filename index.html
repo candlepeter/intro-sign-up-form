@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <title>Intro component with sign up</title>
   </head>
   <body>
@@ -29,30 +34,46 @@
         <div class="form-container">
           <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
           <form class="form" action="#" method="post">
-            <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              placeholder="First Name"
-            />
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              placeholder="Last Name"
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-            />
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-            />
+            <div class="input-wrapper">
+              <input
+                class="input-data"
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="First Name"
+              />
+              <span class="error-message one">error message</span>
+            </div>
+            <div class="input-wrapper">
+              <input
+                class="input-data"
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Last Name"
+              />
+              <span class="error-message two">error message</span>
+            </div>
+            <div class="input-wrapper">
+              <input
+                class="input-data"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+              />
+              <span class="error-message three">error message</span>
+            </div>
+            <div class="input-wrapper">
+              <input
+                class="input-data"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+              <span class="error-message four">error message</span>
+            </div>
             <input class="btn" type="button" value="CLAIM YOUR FREE TRIAL" />
             <p>
               By clicking the button, you are agreeing to our

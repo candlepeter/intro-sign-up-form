@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+.display {
+  display: block;
+}
+
 body,
 .container,
 .wrapper {
@@ -51,12 +55,40 @@ body,
   position: relative;
 }
 
-.form > * {
+#first-name,
+#last-name,
+#email,
+#password,
+.btn {
   padding: 1em;
   margin-top: 1em;
   width: 100%;
   border-radius: 5px;
   border: 0.1em solid var(--grayishBlue);
+  outline: 0;
+  position: relative;
+}
+
+.error-image {
+  display: block;
+  background-image: url(./images/icon-error.svg);
+  background-position: 210px;
+  background-repeat: no-repeat;
+}
+
+.error-message {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  margin: 0.1em 0 0 0.5em;
+  color: var(--red);
+}
+
+.one,
+.two,
+.three,
+.four {
+  display: none;
 }
 
 .form > p {
@@ -101,6 +133,13 @@ body,
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .error-image {
+    display: block;
+    background-image: url(./images/icon-error.svg);
+    background-position: 370px;
+    background-repeat: no-repeat;
   }
 
   .text-container {
