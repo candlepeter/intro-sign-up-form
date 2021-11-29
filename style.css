@@ -110,7 +110,7 @@ body,
   box-shadow: 1px 1px 5px var(--grayishBlue);
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 300px) {
   .wrapper {
     width: 320px;
     text-align: center;
@@ -122,7 +122,7 @@ body,
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1360px) {
   .wrapper {
     width: 80%;
     height: 100vh;
@@ -138,7 +138,7 @@ body,
   .error-image {
     display: block;
     background-image: url(./images/icon-error.svg);
-    background-position: 370px;
+    background-position: 350px;
     background-repeat: no-repeat;
   }
 

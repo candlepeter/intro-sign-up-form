@@ -11,8 +11,9 @@ function displayError() {
   let lastNameValue = lastName.value;
   let emailValue = email.value;
   let passwordValue = password.value;
+ 
 
- if (firstNameValue === "") {
+ if (firstNameValue === "" || firstNameValue.match(/\s+/)) {
    errorMessage[0].textContent = `first name cannot be empty`
    errorMessage[0].classList.remove("one");
    errorMessage[0].classList.add("display");
@@ -20,10 +21,10 @@ function displayError() {
  } else{
    errorMessage[0].classList.remove("display");
    errorMessage[0].classList.add("one");
-   inputData[0].classList.remove("error-image");;
+   inputData[0].classList.remove("error-image");
  };
 
-  if (lastNameValue === "") {
+  if (lastNameValue === "" || lastNameValue.match(/\s+/)) {
    errorMessage[1].textContent = `Last name cannot be empty`
    errorMessage[1].classList.remove("two");
    errorMessage[1].classList.add("display");
@@ -34,7 +35,7 @@ function displayError() {
    inputData[1].classList.remove("error-image");
  };
 
-  if (emailValue === "") {
+  if (emailValue === "" || emailValue.match(/\s+/)) {
    errorMessage[2].textContent = `Email address cannot be empty`
    errorMessage[2].classList.remove("three");
    errorMessage[2].classList.add("display");
@@ -45,7 +46,7 @@ function displayError() {
    inputData[2].classList.remove("error-image");
  };
 
- if (passwordValue === "") {
+ if (passwordValue === "" || passwordValue.match(/\s+/)) {
    errorMessage[3].textContent = `Password cannot be empty`
    errorMessage[3].classList.remove("four");
    errorMessage[3].classList.add("display");
